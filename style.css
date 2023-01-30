@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.menubar{
+    background-color: green;
+    padding: 15px 25px;
+}
+.menubar ul {
+    list-style: none;
+  
+}
+.menubar ul li{
+    display: inline;
+  padding: 8px 15px;
+  position: relative;
+
+}
+.menubar ul li a{
+    color:white;
+    text-decoration: none;
+}
+.menubar ul li > ul{
+    position: absolute;
+    left:0;
+    background: green;
+    width:220px;
+    /* display: none; */
+    transform:scaleY(0);
+    transition: 0.3s;
+    transform-origin:top ;
+    border-top:2px solid white;
+    margin-top:5px;
+}
+.menubar ul li > ul li{
+    display: block;
+}
+.menubar ul li > ul li:hover{
+    border-bottom: 1px dotted white;
+}
+.menubar ul li:hover >ul{
+    /* display: block; */
+    transform:scaleY(1);
+}
